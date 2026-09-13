@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PujaPrem Design System v0.1 — modern Indian devotional minimalism with warm editorial ecommerce.">
+  <title>PujaPrem Design System v0.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="pp-header">
+    <div class="pp-shell pp-header__inner">
+      <a class="pp-logo" href="#top" aria-label="PujaPrem design system home">PujaPrem</a>
+      <nav class="pp-nav" aria-label="Design system sections">
+        <a href="#foundation">Foundation</a>
+        <a href="#components">Components</a>
+        <a href="#content">Content</a>
+        <a href="#states">States</a>
+      </nav>
+      <button class="pp-icon-button" type="button" aria-label="Open help example">?</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="pp-shell pp-hero">
+      <div class="pp-hero__copy">
+        <span class="pp-eyebrow">Design System v0.1</span>
+        <h1 class="pp-heading pp-heading--display">Har Puja,<br>Prem Se.</h1>
+        <p class="pp-copy">A warm, modern design language for PujaPrem — calm enough for devotion, clear enough for commerce, and structured enough for humans and agents to build consistently.</p>
+        <div class="pp-cluster">
+          <a class="pp-btn pp-btn--primary" href="#components">Explore components</a>
+          <a class="pp-btn pp-btn--secondary" href="#foundation">View foundation</a>
+        </div>
+        <p class="pp-muted">Visual north star: modern Indian devotional minimalism with warm editorial ecommerce.</p>
+      </div>
+
+      <div class="pp-hero__art" aria-label="Abstract PujaPrem product and diya composition">
+        <div class="pp-hero__box">
+          <strong>PP</strong>
+          <span>Complete Puja Kit</span>
+        </div>
+        <div class="pp-hero__diya" aria-hidden="true"></div>
+        <div class="pp-hero__tray" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="foundation" class="pp-section pp-section--surface">
+      <div class="pp-shell pp-stack">
+        <div class="pp-stack pp-stack--tight">
+          <span class="pp-eyebrow">Foundation</span>
+          <h2 class="pp-heading">A restrained devotional palette.</h2>
+          <p class="pp-copy">Temple Ivory carries the environment. Maroon anchors the brand. Saffron, Green, and Clay are accents with specific jobs rather than competing primaries.</p>
+        </div>
+
+        <div class="pp-grid pp-grid--4" aria-label="Brand colors">
+          <article class="pp-card"><div class="pp-card__media" style="background:#5A1832;color:#fff">#5A1832</div><div class="pp-card__body"><h3 class="pp-card__title">PujaPrem Maroon</h3><p class="pp-card__meta">Primary brand and action anchor</p></div></article>
+          <article class="pp-card"><div class="pp-card__media" style="background:#F59E0B;color:#201A17">#F59E0B</div><div class="pp-card__body"><h3 class="pp-card__title">Prem Saffron</h3><p class="pp-card__meta">Festival and highlight accent</p></div></article>
+          <article class="pp-card"><div class="pp-card__media" style="background:#FFF8E7;color:#201A17">#FFF8E7</div><div class="pp-card__body"><h3 class="pp-card__title">Temple Ivory</h3><p class="pp-card__meta">Warm environmental canvas</p></div></article>
+          <article class="pp-card"><div class="pp-card__media" style="background:#2E6E50;color:#fff">#2E6E50</div><div class="pp-card__body"><h3 class="pp-card__title">Sacred Green</h3><p class="pp-card__meta">Trust, natural and success cues</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="components" class="pp-section">
+      <div class="pp-shell pp-stack">
+        <div class="pp-stack pp-stack--tight">
+          <span class="pp-eyebrow">Commerce</span>
+          <h2 class="pp-heading">Components that explain before they sell.</h2>
+          <p class="pp-copy">The system prioritizes clarity: product identity, ritual relevance, price, included content, and the next action.</p>
+        </div>
+
+        <div class="pp-grid pp-grid--4">
+          <article class="pp-card">
+            <div class="pp-card__media">Lakshmi Puja Kit</div>
+            <div class="pp-card__body">
+              <span class="pp-badge">Popular kit</span>
+              <h3 class="pp-card__title">Complete Lakshmi Puja Kit</h3>
+              <p class="pp-card__meta">28 thoughtfully organized essentials</p>
+              <div class="pp-price">₹1,199</div>
+              <button class="pp-btn pp-btn--primary" type="button">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="pp-card">
+            <div class="pp-card__media">Daily Puja</div>
+            <div class="pp-card__body">
+              <span class="pp-badge pp-badge--green">Everyday</span>
+              <h3 class="pp-card__title">Daily Puja Essentials</h3>
+              <p class="pp-card__meta">Simple replenishment for regular use</p>
+              <div class="pp-price">₹499</div>
+              <button class="pp-btn pp-btn--secondary" type="button">View essentials</button>
+            </div>
+          </article>
+
+          <article class="pp-guide-card pp-guide-card--green">
+            <span class="pp-badge pp-badge--green">Checklist</span>
+            <h3 class="pp-card__title">Satyanarayan Puja Samagri List</h3>
+            <p class="pp-card__meta">See what you need, what the kit includes, and what should be arranged fresh.</p>
+            <a class="pp-btn pp-btn--quiet" href="#content">Open checklist →</a>
+          </article>
+
+          <article class="pp-guide-card pp-guide-card--festival">
+            <span class="pp-badge">Festival</span>
+            <h3 class="pp-card__title">Prepare for Diwali</h3>
+            <p class="pp-card__meta">Puja guidance, essentials, gifting and useful reminders in one calm hub.</p>
+            <a class="pp-btn pp-btn--quiet" href="#content">Explore festival hub →</a>
+          </article>
+        </div>
+
+        <div class="pp-stack pp-stack--tight">
+          <h3 class="pp-card__title">Buttons and controls</h3>
+          <div class="pp-cluster">
+            <button class="pp-btn pp-btn--primary" type="button">Primary action</button>
+            <button class="pp-btn pp-btn--secondary" type="button">Secondary action</button>
+            <button class="pp-btn pp-btn--quiet" type="button">Quiet action</button>
+            <button class="pp-btn pp-btn--primary" type="button" disabled>Disabled</button>
+          </div>
+        </div>
+
+        <form class="pp-form" style="max-width:560px" action="#" onsubmit="return false">
+          <label class="pp-label" for="search-demo">Search PujaPrem</label>
+          <input class="pp-input" id="search-demo" type="search" placeholder="Try “Satyanarayan items”">
+          <p class="pp-muted">Search will ultimately group Puja, Kits, Products, Guides, Checklists, Festivals and Journal results.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="content" class="pp-section pp-section--surface">
+      <div class="pp-shell pp-stack">
+        <div class="pp-stack pp-stack--tight">
+          <span class="pp-eyebrow">Content × commerce</span>
+          <h2 class="pp-heading">Guidance is part of the product.</h2>
+          <p class="pp-copy">PujaPrem connects practical help to the right commerce surface without turning every article into an advertisement.</p>
+        </div>
+
+        <div class="pp-grid">
+          <article class="pp-guide-card pp-guide-card--green">
+            <span class="pp-badge pp-badge--green">Guide</span>
+            <h3 class="pp-card__title">How to Prepare for Satyanarayan Puja</h3>
+            <p>Preparation, a reviewed checklist, fresh-item notes, and simple step-by-step guidance.</p>
+            <a class="pp-btn pp-btn--secondary" href="#">Read guide</a>
+          </article>
+
+          <article class="pp-guide-card">
+            <span class="pp-badge pp-badge--maroon">Journal</span>
+            <h3 class="pp-card__title">Creating a Calm Puja Space at Home</h3>
+            <p>Editorial inspiration with a softer commercial footprint and related practical Guides.</p>
+            <a class="pp-btn pp-btn--secondary" href="#">Read journal</a>
+          </article>
+
+          <aside class="pp-trust">
+            <span class="pp-badge pp-badge--green">Need help?</span>
+            <h3 class="pp-card__title">Help should know where you are.</h3>
+            <p>On a kit page, surface “What’s included?”, “Which kit should I choose?”, and “What must I arrange fresh?” before a generic contact prompt.</p>
+            <button class="pp-btn pp-btn--secondary" type="button">See help options</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="states" class="pp-section">
+      <div class="pp-shell pp-stack">
+        <div class="pp-stack pp-stack--tight">
+          <span class="pp-eyebrow">States</span>
+          <h2 class="pp-heading">Normal is not the only state.</h2>
+          <p class="pp-copy">Every production component will define loading, empty, error, success/result and unavailable behavior where relevant.</p>
+        </div>
+
+        <div class="pp-state-row">
+          <div class="pp-state pp-state--loading"><strong>Loading</strong><p class="pp-muted">Subtle, non-blocking feedback.</p></div>
+          <div class="pp-state pp-state--empty"><strong>Empty</strong><p class="pp-muted">Helpful next action, not a dead end.</p></div>
+          <div class="pp-state pp-state--error"><strong>Error</strong><p class="pp-muted">Explain what happened and how to recover.</p></div>
+          <div class="pp-state pp-state--success"><strong>Success</strong><p class="pp-muted">Confirm the result and next step.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pp-footer">
+    <div class="pp-shell pp-stack pp-stack--tight">
+      <strong class="pp-logo" style="color:#fff8ee">PujaPrem</strong>
+      <span>Har Puja, Prem Se.</span>
+      <span class="pp-muted" style="color:#cfc3bc">Design System v0.1 foundation lab</span>
+    </div>
+  </footer>
+</body>
+</html>
