@@ -22,6 +22,9 @@ Before changing the system, read:
 - Saffron used selectively, not as a page-wide background default
 - Sacred Green reserved for trust/natural/success-adjacent cues
 - excellent whitespace and photography
+- **Poppins is the only named heading/display font**
+- **Inter is the only named body/UI font**
+- do not introduce Sora, Manrope, Noto Sans Devanagari, or any other third named PujaPrem font without explicit user approval
 - no visual clutter, heavy offset shadows, rainbow brutalism, glassmorphism, or generic SaaS styling
 
 ## Interaction laws
@@ -46,9 +49,10 @@ When adding a component/pattern:
 
 1. identify the UX use case in Core;
 2. use semantic tokens before adding one-off values;
-3. define normal, hover, focus, active, disabled, loading, error/success states as applicable;
-4. document responsive behavior;
-5. add/update the public lab example;
-6. keep machine-readable tokens synchronized with CSS tokens.
+3. preserve the Poppins-heading / Inter-body typography contract;
+4. define normal, hover, focus, active, disabled, loading, error/success states as applicable;
+5. document responsive behavior;
+6. add/update the public lab example;
+7. keep machine-readable tokens synchronized with CSS tokens.
 
 Do not copy theme-specific product content into this repository except as clearly marked demo fixtures.

@@ -79,29 +79,37 @@ The shipping token layer also defines warm neutral surfaces/borders/muted text s
 
 ## 5. Typography
 
-### Display / headings
-Preferred: **Sora** or **Manrope** when available.
+PujaPrem uses exactly two named design-system font families.
 
-Use for:
-- H1–H3
-- product/kit titles
-- navigation emphasis
-- campaign headings
+### Headings / display
+**Poppins** is the required heading family.
+
+Use Poppins for:
+- H1–H6
+- product and Puja Kit titles
+- campaign and promotional headings
+- card titles
+- navigation emphasis where a heading-style treatment is intended
+- large display typography
 
 ### Body / UI
-Preferred: **Inter**.
+**Inter** is the required body and interface family.
 
-Use for:
+Use Inter for:
 - paragraphs
-- product detail
-- forms
-- tables
-- account/support UI
+- product details
+- descriptions
+- forms and inputs
+- tables and checklists
+- buttons and utility labels unless a heading treatment is explicitly required
+- account, support, cart, and other UI text
 
-### Hindi / Devanagari
-Preferred: **Noto Sans Devanagari** or another reviewed compatible family.
+### Typography lock
 
-The final production theme must load fonts efficiently and provide robust system fallbacks.
+- Do not introduce Sora, Manrope, Noto Sans Devanagari, or another named brand/UI font into PujaPrem.
+- The canonical font pairing is **Poppins for headings + Inter for body/UI**.
+- Browser/platform glyph fallback may occur only where a character is unavailable in the named family; that fallback is not a third PujaPrem design-system font role.
+- The production theme must load Poppins and Inter efficiently and avoid duplicate or unused font payloads.
 
 ### Type scale
 
@@ -393,9 +401,14 @@ Do not hide critical purchase facts such as price, quantity, included/excluded i
 
 `tokens/tokens.json` is the canonical token representation for agents/tools. `tokens/tokens.css` is the CSS implementation. When values change, both must change in the same PR.
 
+The typography token contract must always resolve to Poppins for display/headings and Inter for body/UI. A future change to either family requires explicit user approval and a synchronized update to this document plus both token files.
+
 ## 22. v0.1 acceptance criteria
 
 - palette encoded as semantic tokens
+- Poppins locked as the heading/display family
+- Inter locked as the body/UI family
+- no third named PujaPrem design-system font role
 - fluid type/spacing encoded
 - focus/motion/accessibility tokens present
 - primary/secondary button styles

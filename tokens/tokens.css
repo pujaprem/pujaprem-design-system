@@ -25,9 +25,8 @@
   --pp-warning: #9a5a00;
   --pp-danger: #a12622;
 
-  --pp-font-display: Sora, Manrope, ui-sans-serif, system-ui, sans-serif;
+  --pp-font-display: Poppins, ui-sans-serif, system-ui, sans-serif;
   --pp-font-body: Inter, ui-sans-serif, system-ui, sans-serif;
-  --pp-font-devanagari: "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
 
   --pp-text-xs: clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem);
   --pp-text-sm: clamp(0.875rem, 0.84rem + 0.12vw, 0.9375rem);
