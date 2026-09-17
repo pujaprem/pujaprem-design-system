@@ -9,8 +9,15 @@ Before changing the system, read:
 1. this file;
 2. `README.md`;
 3. `docs/DESIGN-SYSTEM.md`;
-4. `tokens/tokens.json`;
-5. the current Store UX Architecture and Customer Journeys from `pujaprem-core` when the requested change affects a commerce flow.
+4. `docs/FLUID-SIZING-CONTRACT.md`;
+5. `tokens/tokens.json`;
+6. the current Store UX Architecture and Customer Journeys from `pujaprem-core` when the requested change affects a commerce flow.
+
+## Current execution priority
+
+- The PujaPrem Shopify theme is the active build priority.
+- Design-system work should directly support finishing the real Shopify storefront before broader future productization or platform expansion.
+- Do not create speculative component systems that distract from current storefront needs.
 
 ## Non-negotiable design direction
 
@@ -26,6 +33,15 @@ Before changing the system, read:
 - **Inter is the only named body/UI font**
 - do not introduce Sora, Manrope, Noto Sans Devanagari, or any other third named PujaPrem font without explicit user approval
 - no visual clutter, heavy offset shadows, rainbow brutalism, glassmorphism, or generic SaaS styling
+
+## Fluid responsive laws
+
+- Use bounded CSS `clamp()` as the default for visual values that should resize continuously across viewport widths.
+- Prefer clamp-based tokens for typography, section spacing, gutters, gaps, and scalable component/media-container dimensions.
+- Use media queries primarily for structural layout changes such as grid-column changes, navigation-to-drawer transitions, and stacking.
+- Do not distort source imagery; resize/crop through responsive containers, `aspect-ratio`, `object-fit`, and appropriate image sources.
+- Do not make fixed accessibility or semantic invariants fluid merely for consistency. Minimum touch targets, border thickness, focus-ring thickness, and icon stroke widths remain appropriately bounded/fixed.
+- Preserve accessibility at 320px and 200% zoom.
 
 ## Interaction laws
 
@@ -50,9 +66,10 @@ When adding a component/pattern:
 1. identify the UX use case in Core;
 2. use semantic tokens before adding one-off values;
 3. preserve the Poppins-heading / Inter-body typography contract;
-4. define normal, hover, focus, active, disabled, loading, error/success states as applicable;
-5. document responsive behavior;
-6. add/update the public lab example;
-7. keep machine-readable tokens synchronized with CSS tokens.
+4. use bounded `clamp()` for fluid sizing before adding breakpoint-only resize overrides;
+5. define normal, hover, focus, active, disabled, loading, error/success states as applicable;
+6. document structural breakpoint behavior;
+7. add/update the public lab example;
+8. keep machine-readable tokens synchronized with CSS tokens.
 
 Do not copy theme-specific product content into this repository except as clearly marked demo fixtures.
